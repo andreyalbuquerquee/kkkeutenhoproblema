@@ -5,50 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eu tenho problemakk</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        #img {
-            text-align: center;
-        }        
-
-        #Bn {
-            position: absolute;
-            right: 34%;
-        }
-
-        #container {
-            width: 100;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #container footer {
-            display: flex;
-            justify-content: space-between;
-            max-width: 433px;
-            width: 100%;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <script type="text/javascript">        
 
         function mensagem(){
-            alert('YEY THANK U LOVE U')
+            alert('YAAAAY THANK YOU!! <3')
+            
         }
 
         function f(){
@@ -58,10 +22,13 @@
             const top = generateRandomValue(); 
             const left = generateRandomValue(); 
 
+            Bn.style.position = 'absolute'
             Bn.style.top =  formatValue(top);
             Bn.style.left = formatValue(left);
+            
         }
 
+        
 
     </script>
 
@@ -75,9 +42,9 @@
             </div>
         
             <footer>
-                <button id="yes" onclick="mensagem()">Yes</button>
+                <button id="yes" onclick="mensagem()"><a href="https://media.tenor.com/GZyF7v0Z-bwAAAAC/yuna-yuna-itzy.gif">Yes</a></button>
                 <div id="Bn">
-                    <button onmouseenter="f()">
+                    <button id="no" onmouseenter="f()">
                         NO
                     </button>
                 </div>
